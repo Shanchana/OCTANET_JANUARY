@@ -1,0 +1,127 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon{
+width:30px;
+margin-left: 10px;
+max-height: 10%;
+}
+
+.container{
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(150deg, #009FC2, #0D0A0B);
+    padding: 10px;
+}
+
+.head{
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.head h2{
+    color: #04526c;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+} 
+
+.row{
+    display: flex 2;
+    align-items: center;
+    justify-content:space-between;
+    background: #d7d9df;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 110px;
+    margin-bottom: 25px;
+    background-size: cover;
+}
+
+.row0{
+    display: flex 3;
+    justify-content:space-between;
+    align-items: center;
+    background: #d7d9df;
+    padding-left: 110px;
+    word-spacing: 4em;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+
+input{
+    flex: 1;
+    border: auto;
+    outline:  auto;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 14;
+    margin-bottom: 10px;
+
+
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 35px;
+    background: #04526c;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50px;
+    background-image: url("C:/Users/sanja/Downloads/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("C:/Users/sanja/Downloads/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
